@@ -1,0 +1,42 @@
+
+/* .TAG */
+.tag
+{
+position: absolute;
+width: 115px;
+height: 25px;
+left: 55px;
+top: 104px;
+}
+
+/* Rectangle 3 */
+.tag > .rect_3
+{
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FF6060;
+border-radius: 10px;
+}
+
+/* tag-name */
+.tag-name
+{
+position: absolute;
+left: 19.13%;
+right: 19.13%;
+top: 12%;
+bottom: 8%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 142.6%;
+/* identical to box height, or 20px */
+
+color: #FFFFFF;
+}

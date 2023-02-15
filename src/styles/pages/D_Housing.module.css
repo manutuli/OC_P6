@@ -1,0 +1,213 @@
+/* .TAG */
+.d_housing > .tag
+{
+position: absolute;
+width: 115px;
+height: 25px;
+left: 100px;
+top: 670px;
+}
+
+/* Rectangle 3 */
+.d_housing > .tag > .rect_3
+{
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FF6060;
+border-radius: 10px;
+}
+
+/* Cozy */
+.d_housing > .tag > .cozy
+{
+position: absolute;
+left: 34.78%;
+right: 35.65%;
+top: 12%;
+bottom: 8%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 142.6%;
+/* identical to box height, or 20px */
+text-align: center;
+
+color: #FFFFFF;
+}
+
+/* Alexandre Dumas */
+.d_housing > .dumas
+{
+position: absolute;
+width: 93px;
+height: 52px;
+left: 1170px;
+top: 573px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+/* or 26px */
+
+display: flex;
+align-items: flex-end;
+text-align: right;
+
+color: #FF6060;
+}
+
+/* _Header */
+.d_housing > .header
+{
+position: absolute;
+width: 1240px;
+height: 68px;
+left: 100px;
+top: 40px;
+}
+
+/* _Nav */
+.d_housing > .header > .nav
+{
+position: absolute;
+width: 309px;
+height: 34px;
+left: 1031px;
+top: 57px;
+}
+
+
+/* Accueil */
+.d_housing > .header > .nav > .welcome
+{
+position: absolute;
+left: 71.6%;
+right: 18.96%;
+top: 5.57%;
+bottom: 91.11%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 142.6%;
+/* or 34px */
+display: flex;
+align-items: flex-end;
+text-align: right;
+
+color: #FF6060;
+}
+
+
+/* A Propos */
+.d_housing > .header > .nav > .about
+{
+position: absolute;
+left: 85%;
+right: 6.94%;
+top: 5.57%;
+bottom: 91.11%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 142.6%;
+/* or 34px */
+display: flex;
+align-items: flex-end;
+text-align: right;
+
+color: #FF6060;
+}
+
+/* .LOGO */
+.d_housing > .header > .logo
+{
+position: absolute;
+left: 6.94%;
+right: 78.45%;
+top: 3.91%;
+bottom: 89.45%;
+}
+
+
+/* Vector */
+.d_housing > .header > .vector_1
+{
+position: absolute;
+left: 6.94%;
+right: 89.28%;
+top: 3.91%;
+bottom: 90.01%;
+
+background: #FF6060;
+}
+
+/* Vector */
+.d_housing > .header > .logo > .vector_2
+{
+position: absolute;
+left: 15.19%;
+right: 82.07%;
+top: 5.34%;
+bottom: 89.98%;
+
+background: #FF6060;
+}
+
+/* Vector */
+.d_housing > .header > .logo > .vector_3
+{
+position: absolute;
+left: 18.71%;
+right: 78.45%;
+top: 5.32%;
+bottom: 89.98%;
+
+background: #FF6060;
+}
+
+/* Group */
+.d_housing > .header > .logo > .group
+{
+position: absolute;
+left: 11.13%;
+right: 85.68%;
+top: 5.34%;
+bottom: 89.45%;
+}
+
+/* Vector */
+.d_housing > .header > .logo > .group > .vector_1
+{
+position: absolute;
+left: 13.3%;
+right: 86.33%;
+top: 8.47%;
+bottom: 90%;
+
+background: #FF6060;
+}
+
+/* Vector */
+.d_housing > .header > .logo > .vector_2
+{
+position: absolute;
+left: 11.13%;
+right: 85.68%;
+top: 5.34%;
+bottom: 89.45%;
+
+background: #FF6060;
+}
+

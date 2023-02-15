@@ -1,0 +1,324 @@
+/* M_Home */
+.m_home
+{
+position: relative;
+width: 375px;
+height: 812px;
+
+background: #FFFFFF;
+}
+
+/* _Body */
+.m_home > .body
+{
+position: absolute;
+width: 336px;
+height: 938px;
+left: 20px;
+top: 83px;
+}
+
+
+/* _Section 1 */
+.m_home > .body > .section_1
+{
+position: absolute;
+width: 335px;
+height: 111px;
+left: 20px;
+top: 83px;
+}
+
+
+/* Mask Group */
+.m_home > .body > .section_1 > .mask
+{
+position: absolute;
+width: 335px;
+height: 111px;
+left: 20px;
+top: 83px;
+}
+
+
+/* Background */
+.m_home > .body > .section_1 > .mask > .bg_light
+{
+position: absolute;
+width: 335px;
+height: 111px;
+left: 20px;
+top: 83px;
+
+background: #F7F7F7;
+border-radius: 10px;
+}
+
+/* IMG */
+.m_home > .body > .section_1 > .mask > img
+{
+position: absolute;
+width: 335px;
+height: 934px;
+left: 20px;
+top: -329px;
+
+background: url(eric-muhr-P_XxsdVgtpQ-unsplash.jpg);
+}
+
+/* Background */
+.m_home > .body > .section_1 > .mask > .bg_dark
+{
+position: absolute;
+width: 335px;
+height: 111px;
+left: 20px;
+top: 83px;
+
+background: #000000;
+mix-blend-mode: darken;
+opacity: 0.3;
+border-radius: 10px;
+}
+
+/* Chez vous, partout et ailleurs */
+.m_home > .body > .section_1 > .slogan
+{
+position: absolute;
+left: 9.6%;
+right: 32.53%;
+top: 14.04%;
+bottom: 80.05%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 100%;
+/* or 24px */
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+
+
+/* _Section 2 */
+.m_home > .body > .section_2
+{
+position: absolute;
+width: 335px;
+height: 805px;
+left: 21px;
+top: 216px;
+}
+
+
+/* .Thumb */
+.m_home > .body > .section_2 > .thumb
+{
+position: absolute;
+width: 335px;
+height: 255px;
+left: 21px;
+top: 216px;
+}
+
+
+/* Img */
+.m_home > .body > .section_2 > .thumb > img
+{
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FF6060;
+border-radius: 10px;
+}
+
+/* Rectangle 2 */
+.m_home > .body > .section_2 > .thumb > .rect_2
+{
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+border-radius: 10px;
+}
+
+/* Titre de la location */
+.m_home > .body > .section_2 > .thumb > .title
+{
+position: absolute;
+left: 5.88%;
+right: 5.88%;
+top: 73.73%;
+bottom: 5.88%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+/* or 26px */
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+
+
+/* _Header-m */
+.header_m
+{
+position: absolute;
+width: 335px;
+height: 47px;
+left: 20px;
+top: 20px;
+}
+
+
+/* .LOGO */
+.header_m > .logo
+{
+position: absolute;
+left: 0%;
+right: 56.72%;
+top: 0%;
+bottom: 0%;
+}
+
+
+/* Vector */
+.header_m > .logo > .vector_1
+{
+position: absolute;
+left: 0%;
+right: 88.82%;
+top: 0%;
+bottom: 8.45%;
+
+background: #FF6060;
+}
+
+/* Vector */
+.header_m > .logo > .vector_2
+{
+position: absolute;
+left: 24.45%;
+right: 67.44%;
+top: 21.53%;
+bottom: 7.89%;
+
+background: #FF6060;
+}
+
+/* Vector */
+.header_m > .logo > .vector_3
+{
+position: absolute;
+left: 34.87%;
+right: 56.72%;
+top: 21.25%;
+bottom: 7.9%;
+
+background: #FF6060;
+}
+
+/* Group */
+.header_m > .logo > .group
+{
+position: absolute;
+left: 12.39%;
+right: 78.13%;
+top: 21.53%;
+bottom: 0%;
+}
+
+
+/* Vector */
+.header_m > .logo > .group > .vector_1
+{
+position: absolute;
+left: 18.84%;
+right: 80.06%;
+top: 68.66%;
+bottom: 8.17%;
+
+background: #FF6060;
+}
+
+/* Vector */
+.header_m > .logo > .group > .vector_1
+{
+position: absolute;
+left: 12.39%;
+right: 78.13%;
+top: 21.53%;
+bottom: 0%;
+
+background: #FF6060;
+}
+
+/* _NAV */
+.header_m > .nav
+{
+position: absolute;
+left: 58.21%;
+right: 0%;
+top: 38.3%;
+bottom: 25.53%;
+}
+
+
+/* A PROPOS */
+.header_m > .nav > .about
+{
+position: absolute;
+left: 78.81%;
+right: 0%;
+top: 38.3%;
+bottom: 25.53%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 142.6%;
+/* or 17px */
+display: flex;
+align-items: flex-end;
+text-align: right;
+
+color: #FF6060;
+}
+
+
+/* ACCUEIL */
+.header_m > .nav > .welcome
+{
+position: absolute;
+left: 58.21%;
+right: 24.18%;
+top: 38.3%;
+bottom: 25.53%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 142.6%;
+/* or 17px */
+display: flex;
+align-items: flex-end;
+text-align: right;
+text-decoration-line: underline;
+
+color: #FF6060;
+}

@@ -1,5 +1,12 @@
 
+import Footer from "../components/Footer";
+// 
 function About () {
-    return (<h2>About</h2>)
+    return (
+      <div className="about">
+        <h2>About</h2>
+        <Footer/>
+      </div>
+    )
   }
   export default About;

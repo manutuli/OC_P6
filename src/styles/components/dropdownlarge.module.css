@@ -1,0 +1,91 @@
+
+/* .dropdownlarge */
+.dropdownlarge
+{
+position: absolute;
+width: 1023px;
+height: 184px;
+left: 55px;
+top: 1023px;
+}
+
+/* Rectangle 4 */
+.dropdownlarge > .rect_4_red
+{
+position: absolute;
+left: 0%;
+right: 0%;
+top: 20.65%;
+bottom: 0%;
+
+background: #F7F7F7;
+border-radius: 5px;
+}
+
+/* Rectangle 4 */
+.dropdownlarge > .rect_4_white
+{
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 74.46%;
+
+background: #FF6060;
+border-radius: 5px;
+}
+
+/* Respect */
+.dropdownlarge > .respect
+{
+position: absolute;
+left: 1.77%;
+right: 88.46%;
+top: 3.12%;
+bottom: 78.4%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 142.6%;
+/* or 34px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+
+/* La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme. */
+.dropdownlarge > .disclaimer
+{
+position: absolute;
+left: 1.76%;
+right: 2.64%;
+top: 40.22%;
+bottom: 10.33%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 142.6%;
+/* or 34px */
+
+color: #FF6060;
+}
+
+
+/* Vector */
+.dropdownlarge > .vector
+{
+position: absolute;
+left: 96.76%;
+right: 1.86%;
+top: 8.74%;
+bottom: 78.3%;
+
+background: #FFFFFF;
+transform: rotate(90deg);
+}
