@@ -27,3 +27,18 @@
 //         });
 //     };
 // };
+<>
+            {/* <div className="carousel">{props.pictures}</div> */}
+            {/* <div className="host">
+                <span className="name">{props.host.name}</span>
+                <div className="image">
+                    <img alt={props.title} src={props.host.picture} />
+                </div>
+                <div className="rating">
+                    <span className="stars">{props.rating}</span>
+                    <div className="location">
+                        <p>{props.location}</p>
+                    </div>
+                </div>
+            </div> */}
+            </>

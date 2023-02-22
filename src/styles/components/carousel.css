@@ -1,0 +1,34 @@
+
+/* CAROUSEL */
+.carousel--container {
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    border: 3px solid purple;
+    padding: 5px;
+    width: 80%;
+}
+
+.carousel--container > span {
+    background-color: plum;
+    border-radius: 50%;
+}
+
+.carousel--container > div {
+    z-index: -1;
+    visibility: hidden;
+}
+
+.carousel--container > .content {
+    z-index: 1;
+    visibility: visible;
+}
+
+.carousel--container > .prev {
+}
+.carousel--container > .content {
+}
+.carousel--container > .next {
+}
+
+/*  */

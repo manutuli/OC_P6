@@ -1,5 +1,6 @@
 
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 // 
 export default function NotFound () {
   const text = {
@@ -11,7 +12,9 @@ export default function NotFound () {
     <div className="notfound">
       <div className="text-big">{text.big}</div>
       <div className="text-medium">{text.medium}</div>
-      <div className="text-small">{text.small}</div>
+      <Link to={'/home'}>
+        <div className="text-small">{text.small}</div>
+      </Link>
       <Footer/>
     </div>
   )

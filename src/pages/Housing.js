@@ -1,33 +1,22 @@
-import Carrousel from "../components/Carrousel";
+
+import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 import Dropdown from "../components/Dropdown";
-import Tags from "../components/Tags";
-import json from "../assets/cardsData.json";
-import { useParams } from "react-router-dom";
+import Title from "../components/Title";
+import { useParams, Navigate  } from "react-router-dom";
 //
-function Housing() {
+export default function Housing() {
+  // 
   let { id } = useParams();
-  const list = [1, 2, 3, 4, 5];
-  const [{ location, description, equipment, title, tags }] = json.filter(
-    (card) => {
-      return card.id === id
-    }
-  );
-  // console.log(tags)
+  if (!id) { return <Navigate to="/error-404" /> }
+  // 
   return (
     <div className="house">
-      <h2>{title}</h2>
-      <h3>{location}</h3>
-      <Carrousel />
-      {tags.map((tag)=>{
-        return (
-          <Tags key={tag} tag={tag} />
-        )
-      })}
-      <Dropdown title="Description" paragraph={description} />
-      <Dropdown title="Equipement" paragraph={equipment} />
+      <Carousel paramId={id} />
+      <Title/>
+      <Dropdown title={"Description"} paramId={id} />
+      <Dropdown title={"Equipements"} paramId={id} />
       <Footer />
     </div>
-  );
+  )
 }
-export default Housing;
