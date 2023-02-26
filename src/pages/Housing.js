@@ -1,29 +1,30 @@
+
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 import Info from "../components/Info";
 import "../styles/index.css";
 import {
   useParams,
-  // Navigate,
-  // useNavigate,
-  // useLocation,
+  useLocation,
+  Navigate,
 } from "react-router-dom";
+import { useEffect } from "react";
 // import { useState } from "react";
 //
-export default function Housing({ cardId }) {
-  //
+export default function Housing( cardId ) {
   let { id } = useParams();
-  // let location = useLocation();
-  // const [param, setParam] = useState(id);
+  let location = useLocation();
+  useEffect(()=>{
+    location.state = id;
+  })
+  // location.state !== id ?  : console.log("-- isValid")
+  // console.log("--housing : ", location.pathname);
   // 
-  // if (id !== param) {
-  //   return <Navigate to="/error-404" replace={true} />;
-  // }
-  // 
-  // setParam(location.state = {paramId: id, count: 0})
-  // console.log(location.state.count +1);
+  console.log("--state : ", location.state);
+  console.log("--id : ", id);
   //
   return (
+    location.state === id ?
     <>
       <section className="page--house">
         <Carousel paramId={id} />
@@ -31,5 +32,6 @@ export default function Housing({ cardId }) {
       </section>
       <Footer />
     </>
+      : <Navigate to={"/404notFound"}/>
   );
 }
