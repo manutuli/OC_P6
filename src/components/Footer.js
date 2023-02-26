@@ -1,8 +1,9 @@
 //
 export default function Footer() {
   return (
-    <footer className="bg_dark" style={{ backgroundColor: "black" }}>
-      <div className="svg">
+    <> 
+    <footer className="footer">
+      <div className="footer--logo">
         <svg
           width="211"
           height="68"
@@ -32,9 +33,10 @@ export default function Footer() {
           />
         </svg>
       </div>
-      <div className="text" style={{ color: "#FFF" }}>
+      <div className="text">
         <p>© 2020 Kasa. All rights reserved</p>
       </div>
     </footer>
-  );
+    </>
+  )
 }

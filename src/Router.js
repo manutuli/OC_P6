@@ -1,19 +1,22 @@
 import "./styles/index.css";
+import "./assets/fonts/static/Montserrat-Light.ttf"
+import "./assets/fonts/static/Montserrat-Bold.ttf"
+import "./styles/normalize.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Housing from "./pages/Housing";
 import NotFound from "./pages/NotFound";
-import Nav from './components/Nav'
+import Banner from "./components/Banner";
 // 
 function Router() {
   return (
     <>
-    <Nav/>
+    <Banner/>
     <Routes>
       <Route exact path="/" element={<Home />} />
       <Route exact path="/home" element={<Home />} />
-      <Route path={"/housing/:id"} element={<Housing/>}/>
+      <Route path={"/housing/:id"} element={<Housing />}/>
       <Route path="/about" element={<About />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
