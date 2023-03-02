@@ -1,13 +1,11 @@
 
 import json from "../assets/cardsData.json";
-// import { useParams } from "react-router-dom";
 import Product from "./Product";
 import Host from "./Host";
 import Dropdown from "./Dropdown";
 import Rating from "./Rating" ; 
 //
 export default function Info({paramId}) {
-//   let { id } = useParams();
   const [{ 
     location, 
     title, 
@@ -22,7 +20,6 @@ export default function Info({paramId}) {
     }
   );
   const {picture, name} = host;
-//   console.log(picture);
   return (
     <main className="info--house">
       <div className="info--brief">

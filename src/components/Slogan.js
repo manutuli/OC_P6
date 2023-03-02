@@ -1,8 +1,6 @@
 
-// import "./"
 // 
 export default function Slogan ({imageUrl, text,}) {
-
     return (
         <div className="slogan--container">
             <div className="text">

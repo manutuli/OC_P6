@@ -1,8 +1,8 @@
-// import React, { useEffect, useState } from "react";
+
 import Footer from "../components/Footer";
 import Card from "../components/Cards.js";
 import json from "../assets/cardsData.json";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import homeImg from '../assets/IMG.png'
 //
 function Home() {
@@ -15,8 +15,12 @@ function Home() {
           <div className="background--home">
           {json.map((card) => {
             return (
-              <Link key={card.id} to={`/housing/${card.id}`}>
-                <Card {...card} />
+              <Link 
+                key={card.id} 
+                to={`/housing/${card.id}`}
+                state={{cardId : card.id}}
+                 >
+                <Card {...card} cardId={card.id} />
               </Link>
             );
           })}
@@ -24,6 +28,7 @@ function Home() {
         </div>
       </section>
       <Footer />
+      <Outlet/>
     </>
   );
 }

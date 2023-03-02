@@ -1,8 +1,10 @@
 
-import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import  logo  from '../assets/kazaLogo.svg';
 // 
 export default function Banner() {
+  let {params} = useParams();
   const keyList = [1,2,3,4,5,6,7,8,9]
     const lists = [
       <Link key={ keyList[0].toString() } to="/">ACCUEIL</Link>,
@@ -14,6 +16,7 @@ export default function Banner() {
       </div>
     );
   return (
+    <>
     <header>
       <div className="banner--logo">
         <img src={logo} alt='logo-kasa'/>
@@ -24,5 +27,7 @@ export default function Banner() {
         </div>
       </nav>
     </header>
+    <Outlet params={params} />
+    </>
   );
 }

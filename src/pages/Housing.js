@@ -1,37 +1,20 @@
 
-import Carousel from "../components/Carousel";
-import Footer from "../components/Footer";
-import Info from "../components/Info";
 import "../styles/index.css";
-import {
-  useParams,
-  useLocation,
-  Navigate,
-} from "react-router-dom";
-import { useEffect } from "react";
-// import { useState } from "react";
+import Carousel from "../components/Carousel";
+import Info from "../components/Info";
+import Footer from "../components/Footer";
+import { useParams, Outlet } from "react-router-dom";
 //
-export default function Housing( cardId ) {
-  let { id } = useParams();
-  let location = useLocation();
-  useEffect(()=>{
-    location.state = id;
-  })
-  // location.state !== id ?  : console.log("-- isValid")
-  // console.log("--housing : ", location.pathname);
+export default function Housing() {
+  let { houseId } = useParams();
   // 
-  console.log("--state : ", location.state);
-  console.log("--id : ", id);
-  //
-  return (
-    location.state === id ?
-    <>
+  return (<>
       <section className="page--house">
-        <Carousel paramId={id} />
-        <Info paramId={id} />
+        <Carousel paramId={houseId} />
+        <Info paramId={houseId} />
       </section>
       <Footer />
+      <Outlet/>
     </>
-      : <Navigate to={"/404notFound"}/>
-  );
+  )
 }

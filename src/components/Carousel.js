@@ -1,3 +1,4 @@
+
 import json from "../assets/cardsData.json"
 import { useState } from "react";
 //
@@ -18,7 +19,6 @@ export default function Carousel({paramId}) {
     index = 0;
   }
   const pos = { leftIndex: index + 1, rightIndex: index - 1 };
-  // console.log("--index", index)
   const leftArrow = <svg width="96" height="121" viewBox="0 0 96 121" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M25.96 81.3458L33.04 88.4258L72.64 48.8258L33.04 9.22583L25.96 16.3058L58.48 48.8258L25.96 81.3458Z" fill="white"/>
   </svg>;

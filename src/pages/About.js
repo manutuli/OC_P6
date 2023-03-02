@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 import aboutImg from "../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.png"
 //
 export default function About() {
-  // const url = unsplashImg;
   const kasa = {
     tagLine: "Chez vous, partout et ailleurs",
     values: [
