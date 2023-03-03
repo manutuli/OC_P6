@@ -1,10 +1,14 @@
+import { useLoaderData } from "react-router-dom";
 import Cards from "../components/Cards";
 import Dropdown from "../components/Dropdown";
 import Footer from "../components/Footer";
-import aboutImg from "../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.png"
+// import imgAbout from "../Router"
+// import aboutImg from "../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.png";
 //
 export default function About() {
+  const imgAbout = useLoaderData();
   const kasa = {
+    image: imgAbout,
     tagLine: "Chez vous, partout et ailleurs",
     values: [
       {
@@ -35,7 +39,7 @@ export default function About() {
     <>
       <section className="page--about content">
         <div className="tagline">
-          <Cards cover={aboutImg} unsplash/>
+          <Cards cover={kasa.image} unsplash/>
         </div>
         <div className="dropdown--large">
           {kasa.values.map((value, index) => (

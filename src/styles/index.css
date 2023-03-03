@@ -139,7 +139,7 @@ nav > div {
 }
 .carousel {
   flex-wrap: nowrap;
-  height: 400px;
+  height: 415px;
   margin: 0 0 20px 0;
 }
 .carousel > div {
@@ -153,10 +153,10 @@ nav > div {
   visibility: visible;
   width: 90%;
 }
-.carousel > div > img{
+.carousel > div > img {
   object-fit: cover;
   border-radius: 20px;
-  height: 400px;
+  height: 415px;
   width: 100%;
 }
 .carousel > span:hover {
@@ -169,7 +169,7 @@ nav > div {
   left: 5%;
   z-index: 22;
   justify-content: flex-start;
-  height: 400px;
+  height: 415px;
   width: 10%;
   border-radius: 20px 0 0 20px;
 }
@@ -178,7 +178,7 @@ nav > div {
   right: 5%;
   z-index: 22;
   justify-content: flex-end;
-  height: 400px;
+  height: 415px;
   width: 10%;
   border-radius: 0 20px 20px 0;
 }
