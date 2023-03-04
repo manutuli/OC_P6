@@ -19,6 +19,7 @@ export default function Info({paramId}) {
       return card.id === paramId;
     }
   );
+  //  
   const {picture, name} = host;
   return (
     <main className="info--house">

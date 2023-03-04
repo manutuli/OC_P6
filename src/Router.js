@@ -16,10 +16,6 @@ const router = createBrowserRouter([
   {
     element: <Banner/>,
     errorElement: <NotFound />,
-    loader: async ()=> {
-      const {default: cards} = await import('./assets/cardsData.json');
-      return cards;
-    },
     children: [
       {
         path: "/",

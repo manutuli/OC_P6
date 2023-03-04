@@ -1,8 +1,9 @@
 
 import Tags from "./Tags";
 //
-export default function Product({ location, title, tags }) {
-  // console.log(tags)
+export default function Product(props, ref) {
+  const { location, title, tags } = props
+  // 
   return (
     <div className="product">
       <div className="product--title">
@@ -18,4 +19,4 @@ export default function Product({ location, title, tags }) {
       </div>
     </div>
   );
-}
+};

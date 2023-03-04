@@ -39,7 +39,6 @@ div, main, section, nav, header, span, footer {
   justify-content: center;
 }
 
-
 /* FOOTER */
 footer {
   padding: 15px;
@@ -54,6 +53,9 @@ footer, header {
   flex-shrink: 0;
   font-size: 18px;
   font-weight: bold;
+}
+footer > text {
+  width: 90%;
 }
 
 
@@ -306,7 +308,6 @@ nav > div {
 .unsplash--card {
   width: 100%;
   color: #fff;
-  font-size: 18px;
 } 
 .unsplash--cover {
   width: 100%;
@@ -319,6 +320,9 @@ nav > div {
 }
 .unsplash--title {
   position: absolute;
+  font-size: 34px;
+  width: 65%;
+  /* border: 3px dashed black; */
   z-index: 22;
 }
 .unsplash--layer {
@@ -386,5 +390,24 @@ nav > div {
   }
   .dropdown--container {
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* header wrap  */
+  header {
+    flex-wrap: wrap;
+  }
+  /* nav mt-inherit  */
+  nav {
+    margin-top: inherit;
+  }
+  /* info-brief h-300 */
+  .info--brief {
+    height: 300px;
+  }
+  /* dropdown-med mt-250 */
+  .dropdown--medium {
+    margin-top: 200px;
   }
 }

@@ -2,8 +2,9 @@
 import json from "../assets/cardsData.json"
 import { useState } from "react";
 //
-export default function Carousel({paramId}) {
+export default function Slideshow({paramId}) {
   let [index, setIndex] = useState(0);
+  // 
   let house = json.find(card => card.id === paramId);
   const [...images] = house.pictures;
   const [...list] = images.map((image, index) => (
@@ -27,7 +28,7 @@ export default function Carousel({paramId}) {
   </svg>;
   // 
   return (
-    <div className="carousel">
+    <div tabIndex={0} id="carousel" className="carousel">
       <div className="carousel--next">{list[pos.rightIndex]}</div>
       <div className="carousel--prev">{list[pos.leftIndex]}</div>
 
