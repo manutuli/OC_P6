@@ -16,9 +16,9 @@ export default function Slideshow({paramId}) {
   ));
   // state updater : setIndex(prevIndex => index = 0)
   if (index < 0) {
-    index = images.length - 1;
+    setIndex(prevIndex => index = images.length - 1)
   } else if (index > images.length - 1) {
-    index = 0;
+    setIndex(prevIndex => index = 0);
   }
   const pos = { leftIndex: index - 1, rightIndex: index + 1 };
   // 
@@ -40,7 +40,7 @@ export default function Slideshow({paramId}) {
       <div className="carousel--current">{list[index]}</div>
       {list.length > 1 && 
       <span className="btn--right" onClick={() => setIndex(pos.rightIndex)}>{leftArrow}</span>}      
-      
+
       <div className="carousel--next">{list[pos.rightIndex]}</div>
       <div className="carousel--prev">{list[pos.leftIndex]}</div>
     </div>

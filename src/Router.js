@@ -6,10 +6,8 @@ import "./styles/normalize.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Housing from "./pages/Housing";
-import NotFound from "./pages/NotFound";
+import NotFound from "./components/NotFound";
 import Banner from "./components/Banner";
-// import "./assets/kalen-emsley-Bkci_8qcdvQ-unsplash.png"
-// import "./assets/IMG.png"
 import { createBrowserRouter } from "react-router-dom";
 //  
 const router = createBrowserRouter([
