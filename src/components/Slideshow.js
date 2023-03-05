@@ -14,12 +14,14 @@ export default function Slideshow({paramId}) {
       alt={house.title}
     />
   ));
+  // state updater : setIndex(prevIndex => index = 0)
   if (index < 0) {
     index = images.length - 1;
   } else if (index > images.length - 1) {
     index = 0;
   }
-  const pos = { leftIndex: index + 1, rightIndex: index - 1 };
+  const pos = { leftIndex: index - 1, rightIndex: index + 1 };
+  // 
   const leftArrow = <svg width="96" height="121" viewBox="0 0 96 121" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M25.96 81.3458L33.04 88.4258L72.64 48.8258L33.04 9.22583L25.96 16.3058L58.48 48.8258L25.96 81.3458Z" fill="white"/>
   </svg>;
@@ -34,6 +36,7 @@ export default function Slideshow({paramId}) {
 
       {list.length > 1 && 
       <span className="btn--left" onClick={() => setIndex(pos.leftIndex)}>{rightArrow}</span> }
+      <span className="btn" >{`${index+1}/${images.length}`}</span>
       <div className="carousel--current">{list[index]}</div>
       {list.length > 1 && 
       <span className="btn--right" onClick={() => setIndex(pos.rightIndex)}>{leftArrow}</span>}      

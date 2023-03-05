@@ -1,6 +1,5 @@
 
 /* TEMPLATE */
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat-Light") , 
@@ -68,9 +67,12 @@ nav {
   width: 90%;
   justify-content: flex-end;
 }
+.navigation {
+  margin-left: 20px;
+
+}
 .navigation > a {
   border-bottom: 3px solid #fff;
-  margin: 0 0 0 20px;
 }
 .navigation > a:hover {
   border-bottom: 3px solid #FF6060;
@@ -166,6 +168,19 @@ nav > div {
   cursor: pointer;
   color: #fff;
 }
+.carousel > .btn {
+  position: absolute;
+  left: 50%;
+  z-index: 22;
+  align-self: flex-end;
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 18pt;
+  font-weight: bold;
+  justify-content: center;
+  height: 45px;
+  width: 10%;
+}
 .carousel > .btn--left {
   position: absolute;
   left: 5%;
@@ -259,7 +274,6 @@ nav > div {
   width: 100%;
   align-self: stretch;
   align-items: flex-start;
-  /* justify-content: flex-start; */
 }
 .dropdown--container > .title {
   color: #fff;
@@ -322,7 +336,6 @@ nav > div {
   position: absolute;
   font-size: 34px;
   width: 65%;
-  /* border: 3px dashed black; */
   z-index: 22;
 }
 .unsplash--layer {
@@ -394,19 +407,19 @@ nav > div {
 }
 
 @media screen and (max-width: 500px) {
-  /* header wrap  */
-  header {
-    flex-wrap: wrap;
+  .banner--logo > img {
+    width: 80%;
   }
-  /* nav mt-inherit  */
+  .navigation {
+    font-size: 12px;
+    margin-left: 10px;
+  }
   nav {
     margin-top: inherit;
   }
-  /* info-brief h-300 */
   .info--brief {
     height: 300px;
   }
-  /* dropdown-med mt-250 */
   .dropdown--medium {
     margin-top: 200px;
   }

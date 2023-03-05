@@ -14,7 +14,7 @@ export default function Housing() {
   })
   // 
   return (<>
-      <section className="page--house">
+      <section className="page--house content">
         <Slideshow paramId={houseId} />
         <Info paramId={houseId} />
       </section>

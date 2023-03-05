@@ -22,7 +22,7 @@ export default function Banner() {
         <img src={logo} alt='logo-kasa'/>
       </div>
       <nav>
-        <div>
+        <div className="banner--list" >
             {listItems}
         </div>
       </nav>
