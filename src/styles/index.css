@@ -170,7 +170,7 @@ nav > div {
 }
 .carousel > .btn {
   position: absolute;
-  left: 50%;
+  left: 45%;
   z-index: 22;
   align-self: flex-end;
   margin-bottom: 50px;
@@ -207,6 +207,8 @@ nav > div {
 }
 .info--brief {
   width: 100%;
+  flex-grow: 1;
+
   height: 200px;
   align-items: end;
   justify-content: space-between;
@@ -238,8 +240,12 @@ nav > div {
   justify-content: space-between;
   margin-top: 10px;
   flex-grow: 1;
+  flex-wrap: nowrap;
 }
+/* .host--name > p {
+} */
 .host--name > p {
+  /* width: 20px; */
   font-size: medium;
   padding: 2%;
   text-align: center ;
@@ -261,7 +267,7 @@ nav > div {
 
 /* DROPDOWN MEDIUM */
 .dropdown--medium {
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 30px;
   gap: 20px;
   justify-content: space-between;
@@ -334,7 +340,7 @@ nav > div {
 }
 .unsplash--title {
   position: absolute;
-  font-size: 34px;
+  font-size: 15pt;
   width: 65%;
   z-index: 22;
 }
@@ -386,7 +392,6 @@ nav > div {
     justify-content: space-around;
     flex-grow: 0;
     height: 100%;
-
   }
   .unsplash--title {
     font-size: 35px;
@@ -418,9 +423,12 @@ nav > div {
     margin-top: inherit;
   }
   .info--brief {
-    height: 300px;
+    height: 250px;
   }
   .dropdown--medium {
     margin-top: 200px;
+  }
+  .rating > span{
+    width: 25px;
   }
 }
