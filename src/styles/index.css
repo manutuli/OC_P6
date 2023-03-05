@@ -206,12 +206,10 @@ nav > div {
   width: 90%;
 }
 .info--brief {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  gap: 20px;
   width: 100%;
-  flex-grow: 1;
-
-  height: 200px;
-  align-items: end;
-  justify-content: space-between;
 }
 .product ,.product--title{
   align-items: flex-start;
@@ -242,10 +240,7 @@ nav > div {
   flex-grow: 1;
   flex-wrap: nowrap;
 }
-/* .host--name > p {
-} */
 .host--name > p {
-  /* width: 20px; */
   font-size: medium;
   padding: 2%;
   text-align: center ;
@@ -267,7 +262,6 @@ nav > div {
 
 /* DROPDOWN MEDIUM */
 .dropdown--medium {
-  margin-top: 150px;
   margin-bottom: 30px;
   gap: 20px;
   justify-content: space-between;
@@ -380,6 +374,11 @@ nav > div {
   .host--identity {
     order: -1;
   }
+  .info--brief {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
   .background--home {
     border-radius: 20px;
     margin-top: 30px;
@@ -421,12 +420,6 @@ nav > div {
   }
   nav {
     margin-top: inherit;
-  }
-  .info--brief {
-    height: 250px;
-  }
-  .dropdown--medium {
-    margin-top: 200px;
   }
   .rating > span{
     width: 25px;
