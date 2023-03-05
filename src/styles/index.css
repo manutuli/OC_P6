@@ -208,7 +208,6 @@ nav > div {
 .info--brief {
   display: grid;
   grid-template-rows: 2fr 1fr;
-  gap: 20px;
   width: 100%;
 }
 .product ,.product--title{
@@ -236,7 +235,6 @@ nav > div {
 }
 .host--container {
   justify-content: space-between;
-  margin-top: 10px;
   flex-grow: 1;
   flex-wrap: nowrap;
 }
@@ -422,6 +420,12 @@ nav > div {
     margin-top: inherit;
   }
   .rating > span{
-    width: 25px;
+    max-width: 25px;
+  }
+  .rating {
+    min-width: 50%;
+  }
+  .host--container {
+    margin-bottom: 10px;
   }
 }
