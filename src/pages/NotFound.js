@@ -15,7 +15,7 @@ export default function NotFound() {
     <div className="notfound content">
     <div className="text-big">{text.big}</div>
     <div className="text-medium">{text.medium}</div>
-    <Link to={"/home"}>
+    <Link to={"/"}>
       <div className="text-small">{text.small}</div>
     </Link>
   </div>
