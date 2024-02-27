@@ -12,7 +12,7 @@ export default function NotFound() {
   };
   error = {
     message : 
-    <div className="notfound content">
+    <div className="notfound content navigation">
     <div className="text-big">{text.big}</div>
     <div className="text-medium">{text.medium}</div>
     <Link to={"/"}>

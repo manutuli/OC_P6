@@ -28,7 +28,7 @@ body > *  {
   box-sizing: border-box;
   overflow: auto;
   overflow-x: hidden;
-  color: #FF6060;
+  color: #000;
   height: 100%;
 }
 div, main, section, nav, header, span, footer {
@@ -60,7 +60,7 @@ footer > text {
 
 /* HEADER  */
 a {
-  color: #FF6060;
+  color: #000;
   text-decoration: none;
 }
 nav {
@@ -72,10 +72,10 @@ nav {
 
 }
 .navigation > a {
-  border-bottom: 3px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 .navigation > a:hover {
-  border-bottom: 3px solid #FF6060;
+  border-bottom: 2px solid #000;
 }
 header {
   flex-wrap: nowrap;
@@ -355,10 +355,14 @@ nav > div {
 .text-big {
   font-weight: 500;
   font-size: 288px;
+  color: #FF6060;
 }
 .text-medium {
   font-family: "Montserrat";
   font-size: 28px;
+  text-align: center;
+  max-width: 70%;
+  color: #FF6060;
 }
 .text-small {
   font-family: "Montserrat";
@@ -408,7 +412,7 @@ nav > div {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .banner--logo > img {
     width: 80%;
   }
@@ -427,5 +431,15 @@ nav > div {
   }
   .host--container {
     margin-bottom: 10px;
+  }
+  /* error */
+  .text-big {
+    font-size: 130px;
+  }
+  .text-medium {
+    font-size: 20px;
+  }
+  .text-small {
+    font-size: 14px;
   }
 }

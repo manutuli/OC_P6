@@ -7,9 +7,9 @@ export default function Product(props, ref) {
   return (
     <div className="product">
       <div className="product--title">
-        <h2>{title}</h2>
+        <h2 className="text-medium">{title}</h2>
         <span className="product--location">
-          <h3>{location}</h3>
+          <h3 className="text-small">{location}</h3>
         </span>
       </div>
       <div className="product--tags">
