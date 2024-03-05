@@ -28,7 +28,7 @@ body > *  {
   box-sizing: border-box;
   overflow: auto;
   overflow-x: hidden;
-  color: #000;
+  color: #FF6060;
   height: 100%;
 }
 div, main, section, nav, header, span, footer {
@@ -60,7 +60,7 @@ footer > text {
 
 /* HEADER  */
 a {
-  color: #000;
+  color: #FF6060;
   text-decoration: none;
 }
 nav {
@@ -75,7 +75,7 @@ nav {
   border-bottom: 2px solid #fff;
 }
 .navigation > a:hover {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #FF6060;
 }
 header {
   flex-wrap: nowrap;
@@ -85,6 +85,12 @@ header {
 }
 nav > div {
   flex-wrap: nowrap;
+}
+.navigation:has(> .active) {
+  border-bottom: 2px solid #FF6060;
+}
+.pending {
+  /*  */
 }
 
 
@@ -206,17 +212,18 @@ nav > div {
   width: 90%;
 }
 .info--brief {
-  display: grid;
-  grid-template-rows: 2fr 1fr;
+  align-items: start;
   width: 100%;
+  outline: 1px solid #FF6060;
 }
-.product ,.product--title{
+.product, .product--title{
   align-items: flex-start;
   flex-direction: column;
 }
 .product--container {
   height: 100%;
-  align-items: start;
+  justify-content: flex-start;
+  flex-grow: 1;
 }
 .product--location {
   font-size: small;
@@ -237,6 +244,7 @@ nav > div {
   justify-content: space-between;
   flex-grow: 1;
   flex-wrap: nowrap;
+  outline: 1px solid #000;
 }
 .host--name > p {
   font-size: medium;
@@ -360,7 +368,7 @@ nav > div {
 .text-medium {
   font-family: "Montserrat";
   font-size: 28px;
-  text-align: center;
+  text-align: start;
   max-width: 70%;
   color: #FF6060;
 }
@@ -373,26 +381,12 @@ nav > div {
 
 /* MEDIA */
 @media screen and (min-width: 950px) {
-  .host--identity {
-    order: -1;
-  }
-  .info--brief {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
   .background--home {
     border-radius: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
     padding-top: 30px;
     background-color: whitesmoke;
-  }
-  .host--container {
-    flex-direction: column;
-    justify-content: space-around;
-    flex-grow: 0;
-    height: 100%;
   }
   .unsplash--title {
     font-size: 35px;

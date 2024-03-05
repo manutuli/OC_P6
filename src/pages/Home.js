@@ -15,7 +15,7 @@ function Home() {
           <div className="background--home">
           {json.map((card) => {
             return (
-              <Link 
+              <Link
                 key={card.id} 
                 to={`/housing/${card.id}`}
                 state={{cardId : card.id}}
