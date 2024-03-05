@@ -214,7 +214,6 @@ nav > div {
 .info--brief {
   align-items: start;
   width: 100%;
-  outline: 1px solid #FF6060;
 }
 .product, .product--title{
   align-items: flex-start;
@@ -244,7 +243,6 @@ nav > div {
   justify-content: space-between;
   flex-grow: 1;
   flex-wrap: nowrap;
-  outline: 1px solid #000;
 }
 .host--name > p {
   font-size: medium;

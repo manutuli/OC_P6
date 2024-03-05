@@ -8,7 +8,6 @@ import { useParams, Outlet } from "react-router-dom";
 import {useEffect} from "react";
 import json from "../assets/cardsData.json";
 //
-
 export default function Housing() {
   let { houseId } = useParams();
   let house = json.find(card => card.id === houseId);
