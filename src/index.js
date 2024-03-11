@@ -2,7 +2,8 @@
 import React from 'react';
 import reportWebVitals from './reportWebVitals';
 import ReactDOM from 'react-dom/client';
-import './styles/index.css';
+// import './styles/index.css';
+import './styles/style.css';
 import { RouterProvider } from 'react-router-dom';
 import router from './Router';
 // 

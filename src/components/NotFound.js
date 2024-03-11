@@ -1,6 +1,5 @@
 
 import { Link, Outlet, useRouteError } from "react-router-dom";
-// import Footer from "../components/Footer";
 //
 export default function NotFound() {
   let error = useRouteError()
@@ -22,7 +21,6 @@ export default function NotFound() {
   }
   return (
     <>{error.message}
-      {/* <Footer /> */}
       <Outlet/>  
     </>
   );
