@@ -1,0 +1,14 @@
+@use '../components/cards';
+
+.page--home {
+    width: 100%;
+    align-self: stretch;
+    flex-direction: column;
+  }
+  .content {
+    min-height: 90vh;
+    flex-grow: 1;
+    width: 90%;
+  }
+
+  

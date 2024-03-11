@@ -60,7 +60,7 @@ footer > text {
 
 /* HEADER  */
 a {
-  color: #FF6060;
+  color: #000;
   text-decoration: none;
 }
 nav {
@@ -75,7 +75,7 @@ nav {
   border-bottom: 2px solid #fff;
 }
 .navigation > a:hover {
-  border-bottom: 2px solid #FF6060;
+  border-bottom: 2px solid #000;
 }
 header {
   flex-wrap: nowrap;
@@ -87,7 +87,7 @@ nav > div {
   flex-wrap: nowrap;
 }
 .navigation:has(> .active) {
-  border-bottom: 2px solid #FF6060;
+  border-bottom: 2px solid #000;
 }
 .pending {
   /*  */
