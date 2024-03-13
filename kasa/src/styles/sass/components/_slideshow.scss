@@ -1,0 +1,64 @@
+.page--house {
+    flex-direction: column;
+    width: 90%;
+    flex-grow: 1;
+  }
+  .carousel {
+    flex-wrap: nowrap;
+    height: 415px;
+    margin: 0 0 20px 0;
+  }
+  .carousel > div {
+    position: absolute;
+    flex-wrap: nowrap;
+    z-index: -1;
+    visibility: hidden;
+  }
+  .carousel > .carousel--current {
+    z-index: 11;
+    visibility: visible;
+    width: 90%;
+  }
+  .carousel > div > img {
+    object-fit: cover;
+    border-radius: 20px;
+    height: 415px;
+    width: 100%;
+  }
+  .carousel > span:hover {
+    background-color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+    color: #fff;
+  }
+  .carousel > .btn {
+    position: absolute;
+    left: 45%;
+    z-index: 22;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 18pt;
+    font-weight: bold;
+    justify-content: center;
+    height: 45px;
+    width: 10%;
+  }
+  .carousel > .btn--left {
+    position: absolute;
+    left: 5%;
+    z-index: 22;
+    justify-content: flex-start;
+    height: 415px;
+    width: 10%;
+    border-radius: 20px 0 0 20px;
+  }
+  .carousel > .btn--right {
+    position: absolute;
+    right: 5%;
+    z-index: 22;
+    justify-content: flex-end;
+    height: 415px;
+    width: 10%;
+    border-radius: 0 20px 20px 0;
+  }
+  
