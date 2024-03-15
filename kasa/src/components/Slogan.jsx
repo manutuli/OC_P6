@@ -1,6 +1,6 @@
-
+import PropTypes from "prop-types"
 // 
-export default function Slogan ({imageUrl, text,}) {
+function Slogan ({imageUrl, text}) {
     return (
         <div className="slogan--container">
             <div className="text">
@@ -12,3 +12,8 @@ export default function Slogan ({imageUrl, text,}) {
         </div>
     )
 }
+Slogan.propTypes = {
+    imageUrl : PropTypes.string,
+    text : PropTypes.string,
+}
+export default Slogan

@@ -3,9 +3,10 @@ import json from "../assets/cardsData.json";
 import Product from "./Product";
 import Host from "./Host";
 import Dropdown from "./Dropdown";
-import Rating from "./Rating" ; 
+import Rating from "./Rating" ;
+import PropTypes from "prop-types" 
 //
-export default function Info({paramId}) {
+function Info({paramId}) {
   const [{ 
     location, 
     title, 
@@ -41,3 +42,7 @@ export default function Info({paramId}) {
     </main>
   );
 }
+Info.propTypes = {
+  paramId : PropTypes.string,
+}
+export default Info

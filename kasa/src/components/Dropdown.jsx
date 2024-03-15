@@ -1,7 +1,8 @@
 
 import { useState } from "react";
+import PropTypes from "prop-types"
 //
-export default function Dropdown({ name, content }) {
+function Dropdown({ name, content }) {
   let [dropState, setState] = useState("close");
   let text ;
   typeof content !== "string" ? [...text] = content : text = content;
@@ -38,3 +39,8 @@ export default function Dropdown({ name, content }) {
     </div>
   );
 }
+Dropdown.propTypes = {
+  name : PropTypes.string,
+  content : PropTypes.string,
+}
+export default Dropdown

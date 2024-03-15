@@ -1,8 +1,9 @@
-
+/* eslint-disable no-unused-vars */
+import PropTypes from "prop-types"
 import json from "../assets/cardsData.json"
 import { useState } from "react";
 //
-export default function Slideshow({paramId}) {
+function Slideshow({paramId}) {
   let [index, setIndex] = useState(0);
   // 
   let house = json.find(card => card.id === paramId);
@@ -46,3 +47,7 @@ export default function Slideshow({paramId}) {
     </div>
   );
 }
+Slideshow.propTypes = {
+  paramId : PropTypes.string,
+}
+export default Slideshow

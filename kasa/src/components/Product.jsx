@@ -1,7 +1,7 @@
-
 import Tags from "./Tags";
+import PropTypes from "prop-types"
 //
-export default function Product(props, ref) {
+ function Product(props) {
   const { location, title, tags } = props
   // 
   return (
@@ -19,4 +19,10 @@ export default function Product(props, ref) {
       </div>
     </div>
   );
-};
+}
+Product.propTypes ={
+  location : PropTypes.string,
+  title : PropTypes.string,
+  tags : PropTypes.array,
+}
+export default Product

@@ -1,6 +1,6 @@
-
+import PropTypes from "prop-types"
 // 
-export default function Tags(props) {
+function Tags(props) {
     const {tag} = props
     return (
         <span className="tag">
@@ -8,3 +8,7 @@ export default function Tags(props) {
         </span>
     )
 }
+Tags.propTypes = {
+    tag : PropTypes.string,
+}
+export default Tags

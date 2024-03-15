@@ -1,6 +1,6 @@
-
+import PropTypes from 'prop-types'
 // 
-export default function Host({name, picture}) {
+function Host({name, picture}) {
   return (
     <div className="host--identity">
       <span className="host--name">
@@ -12,3 +12,8 @@ export default function Host({name, picture}) {
     </div >
   );
 }
+Host.propTypes = {
+  name : PropTypes.string,
+  picture : PropTypes.string,
+}
+export default Host

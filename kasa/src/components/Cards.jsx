@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types'
 
-export default function Cards({ title, cover, unsplash }) {
+function Cards({ title, cover, unsplash }) {
   let coverClass, cardClass, titleClass, layerClass;
   if (unsplash) {
     coverClass = "unsplash--cover";
@@ -26,3 +27,9 @@ export default function Cards({ title, cover, unsplash }) {
     </>
   );
 }
+Cards.propTypes = {
+  title : PropTypes.string,
+  cover : PropTypes.string,
+  unsplash : PropTypes.string,
+}
+export default Cards
