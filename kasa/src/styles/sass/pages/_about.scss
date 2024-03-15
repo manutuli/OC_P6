@@ -1,10 +1,11 @@
+@use '../components/dropdown';
+
 /* ABOUT */
 .page--about {
-    width: 100%;
-    flex-direction: column;
-  }
-  .tagline {
-    width: 90%;
-  }
+  width: 100%;
+  flex-direction: column;
+}
 
-  
+.tagline {
+  width: 90%;
+}

@@ -31,8 +31,8 @@ export default function Dropdown({ name, content }) {
       <div className={`drop--${dropState}`}>
         {
           typeof text !== "string" ? 
-          <p>{text.map(str => (<span key={str}>{`${str}`}</span>))}</p> :
-          <p> {text} </p> 
+          <div className="appliance" >{text.map(str => (<span key={str}>{`${str}`}</span>))}</div> :
+          <p className="description" > {text} </p> 
         }
       </div>
     </div>
