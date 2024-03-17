@@ -11,14 +11,15 @@
   .carousel > div {
     position: absolute;
     flex-wrap: nowrap;
+    overflow: hidden;
     z-index: -1;
-    visibility: hidden;
-  }
-  .carousel > .carousel--current {
-    z-index: 11;
-    visibility: visible;
     width: 90%;
+    // opacity: 0;
   }
+  // .carousel > .carousel--current > img {
+  //   opacity: 100%;
+  //   transition: all 1s ease-out;
+  // }
   .carousel > div > img {
     object-fit: cover;
     border-radius: 20px;

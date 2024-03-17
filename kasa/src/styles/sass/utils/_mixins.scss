@@ -68,31 +68,3 @@
     font-size: 14px;
   }
 }
-
-@keyframes down {
-  0% {
-    // display: none;
-    // transform: translateY(10%);
-    height: 10%;
-  }
-  100% {
-    // transform: translateY(50%);
-    height: 100%;
-  }
-}
-
-// @keyframes up {
-//   0% {
-//     transform: translateY(10%);
-//     height: 10%;
-//     opacity: 100%;
-//   }
-//   50% {
-//     transform: translateY(-50%);
-//     height: -50%;
-//     opacity: 0;
-//   }
-//   100% {
-//     // 
-//   }
-// }

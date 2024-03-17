@@ -41,6 +41,9 @@ function Dropdown({ name, content }) {
 }
 Dropdown.propTypes = {
   name : PropTypes.string,
-  content : PropTypes.string,
+  content : PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array,
+  ]),
 }
 export default Dropdown
