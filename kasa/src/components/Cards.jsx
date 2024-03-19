@@ -30,6 +30,9 @@ function Cards({ title, cover, unsplash }) {
 Cards.propTypes = {
   title : PropTypes.string,
   cover : PropTypes.string,
-  unsplash : PropTypes.string,
+  unsplash : PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.bool,
+  ]),
 }
 export default Cards

@@ -5,6 +5,7 @@ import { useState } from "react";
 
 function Slideshow({paramId}) {
   let [index, setIndex] = useState(0);
+  // let [picture, setPicture] = useState(null)
   // 
   let house = json.find(card => card.id === paramId);
   const [...images] = house.pictures;
@@ -31,24 +32,20 @@ function Slideshow({paramId}) {
   }
   const pos = { leftIndex: index - 1, rightIndex: index + 1 };
   // 
-  return (
+  return list.length > 1 ? (
     <div tabIndex={0} id="carousel" className="carousel">
-      <div className="carousel--next">{list[pos.rightIndex]}</div>
-      <div className="carousel--prev">{list[pos.leftIndex]}</div>
-
-      {list.length > 1 && 
-      <span className="btn--left" onClick={() => setIndex(pos.leftIndex)}>{rightArrow}</span> }
+      { <span className="btn--left" onClick={() => setIndex(pos.leftIndex)}>{rightArrow}</span> }
 
       <span className="btn" >{`${index+1}/${images.length}`}</span>
-      <div className="carousel--current">{list[index]}</div>
-      
-      {list.length > 1 && 
-      <span className="btn--right" onClick={() => setIndex(pos.rightIndex)}>{leftArrow}</span>}      
+      <div className="picture current" >{list[index]}</div>
 
-      <div className="carousel--next">{list[pos.rightIndex]}</div>
-      <div className="carousel--prev">{list[pos.leftIndex]}</div>
+      { <span className="btn--right" onClick={() => setIndex(pos.rightIndex)}>{leftArrow}</span>}      
     </div>
-  );
+  ) : (
+    <div tabIndex={0} id="carousel" className="carousel">
+      <div className="picture current" >{list[index]}</div>
+    </div>
+  )
 }
 Slideshow.propTypes = {
   paramId : PropTypes.string,

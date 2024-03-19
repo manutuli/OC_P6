@@ -10,7 +10,6 @@ import json from "../assets/cardsData.json";
 export default function Housing() {
   let { houseId } = useParams();
   let house = json.find(card => card.id === houseId);
-  // 
   useEffect(()=>{
     window.scrollBy(0, -window.innerHeight)
   })

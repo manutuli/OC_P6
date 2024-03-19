@@ -59,12 +59,18 @@
     transform: rotate(180deg);
   }
   .appliance {
-    flex-direction: column;
     width: 90%;
-    align-items: start;
+    flex-direction: column;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    max-height: 400px;
+    align-items: flex-start;
+    // outline: 1px solid saddlebrown;
   }
   .appliance > span {
-    justify-content: start;
+    justify-content: flex-start;
+    // width: 40%;
+    // outline: 1px solid saddlebrown;
   }
   .description {
     text-overflow: ellipsis;
