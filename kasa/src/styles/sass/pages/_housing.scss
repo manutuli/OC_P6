@@ -1,18 +1,23 @@
 @use '../components/slideshow';
 
+.product--location > h3, .product--title > h2 {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
 .info--house {
     width: 90%;
   }
   .info--brief {
     align-items: start;
     width: 100%;
+    margin: 10px;
   }
   .product, .product--title{
     align-items: flex-start;
     flex-direction: column;
   }
   .product--container {
-    height: 100%;
+    width: 400px;
     justify-content: flex-start;
     flex-grow: 1;
   }
@@ -32,9 +37,9 @@
     background-color: #FF6060;
   }
   .host--container {
-    justify-content: space-between;
+    justify-content: flex-end;
+    max-width: 230px;   
     flex-grow: 1;
-    flex-wrap: nowrap;
   }
   .host--name > p {
     font-size: medium;
@@ -44,5 +49,10 @@
   .host--picture > img {
     width: 70px;
     border-radius: 50%;
+  }
+  .rating {
+    order: 2;
+    margin-top: 15px;
+    justify-content: flex-start;
   }
   

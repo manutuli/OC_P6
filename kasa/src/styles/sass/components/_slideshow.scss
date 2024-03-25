@@ -6,9 +6,9 @@
 
 .carousel {
   flex-wrap: nowrap;
-  height: 415px;
+  height: 50vh;
   margin: 0 0 20px 0;
-  // max-width: 1600px;
+  max-width: 1600px;
 }
 
 .carousel>div {
@@ -16,41 +16,13 @@
   flex-wrap: nowrap;
   overflow: hidden;
   width: 90%;
-  max-width: 1600px;
+  // max-width: 1600px;
 }
-
-
-// ANIMATION 
-// .picture {
-//   // 
-// }
-
-// .next > img {
-//   // scale: 70%;
-//   // translate: 30px 0;
-//   transition: all 1s ease-out;
-// }
-
-// .prev > img {
-//   // scale: 50%;
-//   transition: all 1s ease-out;
-//   // translate: -30px 0;
-// }
-
-// .current > img {
-//   // opacity: 80%;
-//   // scale: 60%;
-//   transition: all 1s ease-out;
-//   // max-width: 100px;
-// }
-// .current {
-//   // transition: all 1s ease-out;
-// }
 
 .carousel>div>img {
   object-fit: cover;
   border-radius: 20px;
-  height: 415px;
+  height: 50vh;
   width: 100%;
 }
 // 
@@ -78,20 +50,22 @@
 
 .carousel>.btn--left {
   position: absolute;
-  left: 5%;
-  z-index: 22;
   justify-content: flex-start;
-  height: 415px;
+  left: 5%;
   width: 10%;
+
+  height: 50vh;
   border-radius: 20px 0 0 20px;
+  z-index: 22;
 }
 
 .carousel>.btn--right {
   position: absolute;
-  right: 5%;
-  z-index: 22;
   justify-content: flex-end;
-  height: 415px;
+  right: 5%;
   width: 10%;
+
+  height: 50vh;
   border-radius: 0 20px 20px 0;
+  z-index: 22;
 }
